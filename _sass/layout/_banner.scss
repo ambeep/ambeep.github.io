@@ -51,6 +51,11 @@
 			-webkit-text-fill-color: transparent;
 			-webkit-box-decoration-break: clone;
 			box-decoration-break: clone;
+			
+			/* fixes ios Safari 
+			   https://stackoverflow.com/questions/44963978/safari-on-ios-not-displaying-text-when-using-background-clip-and-text-fill-color
+		    */
+			display: inline;
 		}
 
 		> .inner {
